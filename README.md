@@ -29,8 +29,8 @@ ddns-client/
 ```
 
 # کلون کردن یا دانلود فایل‌ها
-git clone https://github.com/yourusername/ddns-client.git
-cd ddns-client
+git clone https://github.com/mehran-mrn/ddns.git
+cd ddns
 
 # اعطای مجوز اجرا
 chmod +x install.sh ddns_client.py
