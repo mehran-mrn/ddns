@@ -24,3 +24,19 @@ ddns-client/
   - **ddns-client.service** - systemd service unit file
   - **ddns-client.timer** - systemd timer unit file
 - **logs/** - Directory for storing log files
+
+##نصب:
+
+```
+
+# کلون کردن یا دانلود فایل‌ها
+git clone https://github.com/yourusername/ddns-client.git
+cd ddns-client
+
+# اعطای مجوز اجرا
+chmod +x install.sh ddns_client.py
+
+# نصب
+sudo ./install.sh
+
+```
