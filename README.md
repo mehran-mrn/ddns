@@ -1,14 +1,26 @@
-## 📁 Project Structure
+# DDNS Client - Directory Structure
 
-The project directory is organized as follows:
-
+```
 ddns-client/
-├── config.yaml # Configuration file
-├── ddns_client.py # Main application
-├── requirements.txt # Python dependencies
-├── install.sh # Installation script
-├── uninstall.sh # Uninstallation script
-├── systemd/ # systemd service files
-│ ├── ddns-client.service
-│ └── ddns-client.timer
-└── logs/ # Log files directoryدایرکتوری لاگ‌ها
+├── config.yaml              # Configuration file
+├── ddns_client.py           # Main application
+├── requirements.txt         # Python dependencies
+├── install.sh               # Installation script
+├── uninstall.sh             # Uninstallation script
+├── systemd/                 # systemd service files
+│   ├── ddns-client.service
+│   └── ddns-client.timer
+└── logs/                    # Log files directory
+```
+
+## File Descriptions
+
+- **config.yaml** - Configuration file for DDNS client settings
+- **ddns_client.py** - Main application script
+- **requirements.txt** - Python dependencies list
+- **install.sh** - Installation script for setting up the service
+- **uninstall.sh** - Uninstallation script for removing the service
+- **systemd/** - Directory containing systemd service files
+  - **ddns-client.service** - systemd service unit file
+  - **ddns-client.timer** - systemd timer unit file
+- **logs/** - Directory for storing log files
