@@ -25,8 +25,7 @@ ddns-client/
   - **ddns-client.timer** - systemd timer unit file
 - **logs/** - Directory for storing log files
 
-##نصب:
-
+## Inistall:
 ```
 
 # کلون کردن یا دانلود فایل‌ها
