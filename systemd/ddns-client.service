@@ -1,0 +1,26 @@
+[Unit]
+Description=DDNS Client Service
+Documentation=https://github.com/mehran-mrn/ddns
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/ddns-client
+ExecStart=/usr/bin/python3 /opt/ddns-client/ddns_client.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ddns-client
+
+# Security
+ProtectSystem=strict
+ReadWritePaths=/var/log/ddns-client
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
