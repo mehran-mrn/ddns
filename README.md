@@ -1,10 +1,14 @@
+## 📁 Project Structure
+
+The project directory is organized as follows:
+
 ddns-client/
-├── config.yaml          # فایل تنظیمات
-├── ddns_client.py       # برنامه اصلی
-├── requirements.txt     # وابستگی‌های پایتون
-├── install.sh          # اسکریپت نصب
-├── uninstall.sh        # اسکریکیت حذف
-├── systemd/           # فایل‌های سرویس systemd
-│   ├── ddns-client.service
-│   └── ddns-client.timer
-└── logs/              # دایرکتوری لاگ‌ها
+├── config.yaml # Configuration file
+├── ddns_client.py # Main application
+├── requirements.txt # Python dependencies
+├── install.sh # Installation script
+├── uninstall.sh # Uninstallation script
+├── systemd/ # systemd service files
+│ ├── ddns-client.service
+│ └── ddns-client.timer
+└── logs/ # Log files directoryدایرکتوری لاگ‌ها
