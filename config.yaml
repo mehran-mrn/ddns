@@ -1,0 +1,46 @@
+# DDNS Client Configuration
+
+server:
+  # آدرس سرور DDNS
+  url: "https://DOMAIN.COM/api/v1/update"
+  
+  # تنظیمات احراز هویت
+  username: "your_username"
+  password: "your_password"
+  
+  # تنظیمات شبکه
+  interface: "eth0"  # نام کارت شبکه A
+  force_ipv4: true   # فقط از IPv4 استفاده کن
+  
+  # تنظیمات اتصال
+  timeout: 30        # timeout به ثانیه
+  retry_count: 3     # تعداد تلاش مجدد
+  retry_delay: 5     # تاخیر بین تلاش‌ها (ثانیه)
+
+# تنظیمات برنامه
+client:
+  update_interval: 300  # فاصله بین آپدیت‌ها (ثانیه) - هر 5 دقیقه
+  log_level: "INFO"     # INFO, DEBUG, WARNING, ERROR
+  log_file: "/var/log/ddns-client/ddns.log"
+  pid_file: "/var/run/ddns-client.pid"
+  
+  # تنظیمات DNS اضافی
+  check_dns: true
+  dns_server: "8.8.8.8"
+  dns_timeout: 5
+
+# تنظیمات ایمیل نوتیفیکیشن (اختیاری)
+notifications:
+  enabled: false
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  smtp_username: ""
+  smtp_password: ""
+  from_email: ""
+  to_email: ""
+  
+# تنظیمات Webhook (اختیاری)
+webhook:
+  enabled: false
+  url: ""
+  secret: ""
